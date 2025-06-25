@@ -31,6 +31,8 @@ değiştirilebilmekle birlikte, çalışmanın tüm
 aşamaları CPU üzerinde gerçekleştirilmiştir. Bu
 sayede modelin donanımdan bağımsız olarak
 çalışabilirliği test edilmiştir.
+
+
 B. Veri Kümesi Yapısı
 Kullanılan veri kümesi, MultiZooSplit adlı bir
 klasör yapısı içerisinde train/ ve val/ alt klasörlerini
@@ -41,6 +43,8 @@ tanımlanmış ve model bu 90 sınıf üzerinden
 eğitilmiştir. ImageFolder yapısı kullanılarak veri
 kümesi sınıf etiketleriyle otomatik olarak
 eşleştirilmiştir.
+
+
 C. Görüntü Ön İşleme (Data Augmentation)
 Modelin aşırı öğrenmesini (overfitting) önlemek
 amacıyla eğitim verilerine çeşitli görüntü işleme
@@ -61,6 +65,9 @@ boyutlandırma ve normalize işlemleri
 uygulanmıştır. Böylece eğitim sırasında veri
 çeşitliliği artırılırken, doğrulama aşamasında gerçek
 veri dağılımı korunmuştur.
+
+
+
 D. Model Mimarisi
 Model olarak timm kütüphanesi üzerinden
 vit_base_patch16_224 mimarisi kullanılmıştır. Bu
@@ -73,6 +80,8 @@ katmanları önceden eğitilmiş (pretrained)
 ağırlıklarla başlatılmıştır. Bu, transfer öğrenmenin
 bir örneği olup sınıflandırma doğruluğunu artırmak
 amacıyla uygulanmıştır.
+
+
 E. Eğitim Süreci
 Modelin eğitimi toplam 5 epoch boyunca
 gerçekleştirilmiştir. Her epoch’ta tüm eğitim verisi
@@ -92,6 +101,9 @@ Her epoch sonunda doğruluk ve ortalama kayıp
 değerleri hesaplanmış ve kaydedilmiştir. Aşağıda 5
 epoch boyunca elde edilen ortalama kayıp ve
 doğruluk değerlerinin grafiği sunulmuştur
+
+
+
 F. Doğrulama ve Değerlendirme
 Eğitim tamamlandıktan sonra model değerlendirme
 (eval) moduna geçirilmiştir. Doğrulama verisi
@@ -101,6 +113,9 @@ performansı, sklearn.metrics.classification_report
 fonksiyonu ile ölçülmüştür. Elde edilen metrikler
 bir CSV dosyasına kaydedilerek daha sonra analiz
 edilebilecek biçimde dışa aktarılmıştır.
+
+
+
 G. Model Kaydı ve Öğrenme Eğrisi
 Eğitim sonunda elde edilen modelin ağırlıkları
 vit_model_mps2.pth dosyası olarak kaydedilmiştir.
