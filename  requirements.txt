@@ -1,0 +1,14 @@
+# PyTorch ve MPS desteği için
+torch
+torchvision
+torchaudio
+
+# Transformers
+transformers
+
+# Görüntü işleme
+Pillow
+
+# Veri analizi ve metrikler
+scikit-learn
+matplotlib
