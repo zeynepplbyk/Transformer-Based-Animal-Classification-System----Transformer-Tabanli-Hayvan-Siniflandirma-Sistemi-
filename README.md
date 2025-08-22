@@ -44,6 +44,12 @@ Doğrulama Doğruluğu: %94.7
 
 # Masaüstü Arayüz
 Kullanıcı, uygulama arayüzü üzerinden test görselleri yükleyip tahmin sonuçlarını görebilmektedir.
+<img width="595" height="693" alt="Ekran Resmi 2025-08-22 23 08 16" src="https://github.com/user-attachments/assets/698b003d-a811-4f9b-a152-a4658b9294a6" />
+
+
+<img width="211" height="146" alt="Ekran Resmi 2025-08-22 23 08 51" src="https://github.com/user-attachments/assets/ca94f48c-5627-4a35-8f4c-15ef79862ab4" />
+
+<img width="589" height="692" alt="Ekran Resmi 2025-08-22 23 09 03" src="https://github.com/user-attachments/assets/ca4ad27e-5bf9-4fe0-8bd5-fa867b366173" />
 
 
 # Repository'yi klonla
